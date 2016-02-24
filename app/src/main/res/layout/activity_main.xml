@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.lietou.rcipo.MainActivity">
+
+
+    <!--底部Tab的布局-->
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:id="@+id/lin_tab_id"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_write"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <!--提醒-->
+        <TextView
+            android:id="@+id/text_channel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_channel"
+            android:gravity="center"
+            android:text="@string/tab_menu_alert"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="16sp"/>
+        <!--信息-->
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_message"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_profile"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="16sp"/>
+        <!--我的-->
+        <TextView
+            android:id="@+id/text_better"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_better"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_pay"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="16sp"/>
+        <!--设置-->
+        <TextView
+            android:id="@+id/text_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_my"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_setting"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_above="@id/lin_tab_id"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+    <FrameLayout
+        android:id="@+id/ly_centent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
