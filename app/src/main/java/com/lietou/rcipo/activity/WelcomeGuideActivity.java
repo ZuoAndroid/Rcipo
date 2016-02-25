@@ -52,6 +52,7 @@ public class WelcomeGuideActivity extends Activity implements View.OnClickListen
 
         views = new ArrayList<>();
 
+        //4769.71
         //初始化引导页视图列表
         for (int i = 0; i < pics.length; i++) {
             View view = LayoutInflater.from(this).inflate(pics[i], null);

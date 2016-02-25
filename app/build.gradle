@@ -18,6 +18,11 @@ android {
         }
     }
 }
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -29,4 +34,8 @@ dependencies {
     compile 'com.alibaba:fastjson:1.2.7'
     compile 'org.xutils:xutils:3.3.14'
     compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/MobCommons-2016.0131.1739.jar')
+    compile files('libs/MobTools-2016.0131.1739.jar')
+    compile name:'SMSSDK-2.0.1',ext:'aar'
+    compile name:'SMSSDKGUI-2.0.1',ext:'aar'
 }
